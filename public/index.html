@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+    <div id="listing-form">
+      <h2>Add / Edit Listing</h2>
+      <form id="form">
+        <input type="hidden" id="listing-id">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="latitude">Latitude:</label>
+        <input type="number" id="latitude" step="0.000001" required>
+        <label for="longitude">Longitude:</label>
+        <input type="number" id="longitude" step="0.000001" required>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+    <h2>Listings</h2>
+    <table id="listings-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="/js/admin.js"></script>
+</body>
+</html>
